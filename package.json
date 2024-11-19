@@ -1,12 +1,18 @@
 {
-  "name": "natours",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+    "name": "natours",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "A simplified modern project for styling with Gulp.",
+    "scripts": {
+        "start": "gulp"
+    },
+    "devDependencies": {
+        "gulp": "^5.0.0",
+        "gulp-sass": "^5.1.0",
+        "gulp-postcss": "^10.0.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "browser-sync": "^3.0.3",
+        "autoprefixer": "^10.4.20",
+        "cssnano": "^7.0.6"
+    }
 }
