@@ -1,1 +1,1 @@
-{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAAA,GAEI,UAAA,CADA,iBCEJ","file":"main.css","sourcesContent":["h1{\n    text-align: center;\n    color: blue;\n}","h1 {\n  text-align: center;\n  color: blue;\n}"]}
+{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAAA,GAEI,SAAA,CADA,iBCEJ","file":"main.css","sourcesContent":["h1{\n    text-align: center;\n    color: red;\n}","h1 {\n  text-align: center;\n  color: red;\n}"]}
