@@ -1,5 +1,11 @@
+html {
+  font-size: 62.5%; // 1rem = 10px for easier calculations
+}
+
 body {
     font-family: $font-primary;
     font-weight: $font-weight-primary;
     color: $grey;
+    padding: 3rem;
+    font-size: 1.6rem; // 16px
 }
