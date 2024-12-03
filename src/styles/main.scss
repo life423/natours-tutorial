@@ -1,4 +1,27 @@
-h1{
-    text-align: center;
-    color: red;
-}
+/* main.scss - Main Stylesheet for Modern Web Project */
+
+// Import Resets
+@import 'base/reset';
+
+// Import Abstracts
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+// Import Base Styles
+@import 'base/base';
+
+// Import Layout
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+
+// Import Components
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/forms';
+
+// Import Pages
+@import 'pages/index';
+@import 'pages/home';
+@import 'pages/about';
