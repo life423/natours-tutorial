@@ -8,4 +8,5 @@ body {
     color: $grey;
     padding: 3rem;
     font-size: 1.6rem; // 16px
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
