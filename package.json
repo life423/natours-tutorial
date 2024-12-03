@@ -4,15 +4,22 @@
     "type": "module",
     "description": "A simplified modern project for styling with Gulp.",
     "scripts": {
-        "start": "gulp"
+        "start": "gulp",
+        "lint:scss": "stylelint \"src/styles/**/*.scss\""
     },
     "devDependencies": {
-        "gulp": "^5.0.0",
-        "gulp-sass": "^5.1.0",
-        "gulp-postcss": "^10.0.0",
-        "gulp-sourcemaps": "^3.0.0",
-        "browser-sync": "^3.0.3",
         "autoprefixer": "^10.4.20",
-        "cssnano": "^7.0.6"
+        "browser-sync": "^3.0.3",
+        "cssnano": "^7.0.6",
+        "gulp": "^5.0.0",
+        "gulp-postcss": "^10.0.0",
+        "gulp-sass": "^5.1.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "stylelint": "^16.10.0",
+        "stylelint-config-standard": "^36.0.1",
+        "stylelint-scss": "^6.9.0"
+    },
+    "dependencies": {
+        "sass": "^1.81.1"
     }
 }
