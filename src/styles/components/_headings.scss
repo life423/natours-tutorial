@@ -8,7 +8,7 @@
         font-size: $heading-font-size;
         font-weight: $heading-font-weight;
         letter-spacing: $heading-letter-spacing;
-        animation: moveInLeft 3s;
+        animation: moveInLeft 1s ease-out;
     }
 
     &--secondary {
