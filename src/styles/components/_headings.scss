@@ -1,8 +1,16 @@
 .heading-main {
+    color: $heading-color;
+    text-transform: uppercase;
+    
+
     &--primary {
-        
+        display: block;
+        font-size: $heading-font-size;
+        font-weight: $heading-font-weight;
+        letter-spacing: $heading-letter-spacing;
     }
 
     &--secondary {
+        display: block;
     }
 }
