@@ -12,5 +12,8 @@
 
     &--secondary {
         display: block;
+        font-size: $heading-secondary-font-size;
+        font-weight: $heading-secondary-font-weight;
+        letter-spacing: $heading-secondary-letter-spacing;
     }
 }
