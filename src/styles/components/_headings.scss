@@ -9,6 +9,7 @@
         font-weight: $heading-font-weight;
         letter-spacing: $heading-letter-spacing;
         animation: moveInLeft 1s ease-out;
+        backface-visibility: hidden;
     }
 
     &--secondary {
