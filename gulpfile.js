@@ -1,12 +1,14 @@
+// gulpfile.js
+
 import { src, dest, watch, series } from 'gulp'
 import gulpSass from 'gulp-sass'
 import * as sass from 'sass'
 import postcss from 'gulp-postcss'
 import autoprefixer from 'autoprefixer'
+import postcssPresetEnv from 'postcss-preset-env'
 import cssnano from 'cssnano'
 import sourcemaps from 'gulp-sourcemaps'
 import browserSync from 'browser-sync'
-import postcssPresetEnv from 'postcss-preset-env'
 
 // Initialize SASS compiler
 const sassCompiler = gulpSass(sass)
@@ -22,25 +24,14 @@ const paths = {
     },
 }
 
-
-
-// Compile SASS to CSS
-// function compileSass() {
-//     return src(paths.styles.src)
-//         .pipe(sourcemaps.init())
-//         .pipe(sassCompiler().on('error', sassCompiler.logError))
-//         .pipe(postcss([autoprefixer(), cssnano()]))
-//         .pipe(sourcemaps.write('.'))
-//         .pipe(dest(paths.styles.dest))
-//         .pipe(browserSync.stream())
-// }
-
+// Compile SASS to CSS with PostCSS plugins
 function compileSass() {
     return src(paths.styles.src)
         .pipe(sourcemaps.init())
         .pipe(sassCompiler().on('error', sassCompiler.logError))
         .pipe(
             postcss([
+                autoprefixer(),
                 postcssPresetEnv({
                     stage: 3, // Adjust based on desired CSS features
                     browsers: 'last 2 versions',
@@ -52,18 +43,6 @@ function compileSass() {
         .pipe(dest(paths.styles.dest))
         .pipe(browserSync.stream())
 }
-
-// Live-reloading server
-// function liveReload() {
-//     browserSync.init({
-//         server: {
-//             baseDir: './',
-//         },
-//     })
-
-//     watch(paths.styles.src, compileSass)
-//     watch('*.html').on('change', browserSync.reload)
-// }
 
 // Live-reloading server
 function liveReload() {
