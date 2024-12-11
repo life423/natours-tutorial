@@ -1,4 +1,6 @@
 .header {
+
+  
     position: relative;
 
     height: 95vh;
@@ -24,6 +26,10 @@
     }
 
     &__text-box {
-        @include center-absolute;
+        // @include center-absolute;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        height:100%;
     }
 }
