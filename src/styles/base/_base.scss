@@ -1,6 +1,8 @@
+/* Fluid Root Font Size */
 html {
-  font-size: 62.5%; // 1rem = 10px for easier calculations
+  font-size: calc(62.5% + 0.25vw); // Slightly adjusts root size based on viewport
 }
+
 
 body {
     font-family: $font-primary;
