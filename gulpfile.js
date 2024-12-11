@@ -6,6 +6,7 @@ import autoprefixer from 'autoprefixer'
 import cssnano from 'cssnano'
 import sourcemaps from 'gulp-sourcemaps'
 import browserSync from 'browser-sync'
+import postcssPresetEnv from 'postcss-preset-env'
 
 // Initialize SASS compiler
 const sassCompiler = gulpSass(sass)
@@ -24,11 +25,29 @@ const paths = {
 
 
 // Compile SASS to CSS
+// function compileSass() {
+//     return src(paths.styles.src)
+//         .pipe(sourcemaps.init())
+//         .pipe(sassCompiler().on('error', sassCompiler.logError))
+//         .pipe(postcss([autoprefixer(), cssnano()]))
+//         .pipe(sourcemaps.write('.'))
+//         .pipe(dest(paths.styles.dest))
+//         .pipe(browserSync.stream())
+// }
+
 function compileSass() {
     return src(paths.styles.src)
         .pipe(sourcemaps.init())
         .pipe(sassCompiler().on('error', sassCompiler.logError))
-        .pipe(postcss([autoprefixer(), cssnano()]))
+        .pipe(
+            postcss([
+                postcssPresetEnv({
+                    stage: 3, // Adjust based on desired CSS features
+                    browsers: 'last 2 versions',
+                }),
+                cssnano(),
+            ])
+        )
         .pipe(sourcemaps.write('.'))
         .pipe(dest(paths.styles.dest))
         .pipe(browserSync.stream())
