@@ -1,32 +1,31 @@
 .header {
-    position: relative;
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb($green-light 0.8),
+    rgb($green-dark 0.8)
+  ),
+    url("../../../src/img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
-    height: 95vh;
-    background-image: linear-gradient(
-            to right bottom,
-            rgba($green-light, 0.8),
-            rgba($green-dark, 0.8)
-        ),
-        url('../../../src/img/hero.jpg');
-    background-size: cover;
-    background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    height: 3.5rem;
+  }
 
-    &__logo-box {
-        position: absolute;
-        top: 4rem;
-        left: 4rem;
-        height: 3.5rem;
-    }
+  &__logo {
+    width: 100%; /* Makes the logo fill its container */
+    max-width: 10rem; /* Caps the logo size to 10rem */
+    height: auto;
+    display: block;
+  }
 
-    &__logo {
-        width: 100%; /* Makes the logo fill its container */
-        max-width: 10rem; /* Caps the logo size to 10rem */
-        height: auto;
-        display: block;
-    }
-
-    &__text-box {
-        @include center-absolute;
-    }
+  &__text-box {
+    @include center-absolute;
+  }
 }

@@ -1,24 +1,23 @@
 // Font Variables
-$font-primary: 'Lato', sans-serif;
+$font-primary: 'Lato', sans-serif;FontVariables$font-primary
 $font-weight-primary: 400;
 
 // Color Variables
-$green-light: #7ed56f;
+$green-light: #7ed56f;ColorVariables$green-light
 $green-medium: #55c57a;
 $green-dark: #28b485;
 
-$grey:#7777;
+$grey: #777; 
 
 $white: #fff;
 
-
-//Heading Variables- Main Heading
-$heading-font-size:6rem;
-$heading-font-weight:400;
-$heading-color:$white;
-$heading-letter-spacing:3.5rem;
+// Heading Variables - Main Heading
+$heading-font-size: 6rem;HeadingVariablesMainHeading$heading-font-size
+$heading-font-weight: 400;
+$heading-color: $white;
+$heading-letter-spacing: 3.5rem;
 
 // Secondary Heading Variables - Main Heading - Secondary
-$heading-secondary-font-size: 2rem; // Converted from 20px
-$heading-secondary-font-weight: 700;
-$heading-secondary-letter-spacing: 1.74rem; // Converted from 15px
+$heading-secondary-font-size: 2rem;SecondaryHeadingVariablesMainHeadingSecondary$heading-secondary-font-size // 20px
+$heading-secondary-font-weight: 700;20px$heading-secondary-font-weight
+$heading-secondary-letter-spacing: 1.74rem; // 15px

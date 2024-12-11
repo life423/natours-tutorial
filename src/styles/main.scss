@@ -1,30 +1,25 @@
 /* main.scss - Main Stylesheet for Modern Web Project */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 // Import Resets
-@import 'base/reset';
-
+@import "normalize.css/normalize.css";
+@import url("base/reset");
 // Import Abstracts
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
-@import 'abstracts/animations';
-
+@import "abstracts/functions";
+@import url("abstracts/mixins");
+@import url("abstracts/variables");
+@import url("abstracts/animations");
 // Import Base Styles
-@import 'base/base';
-
+@import "base/base";
 // Import Layout
-@import 'layout/grid';
-@import 'layout/header';
-@import 'layout/footer';
-
+@import "layout/grid";
+@import url("layout/header");
+@import url("layout/footer");
 // Import Components
-@import 'components/buttons';
-@import 'components/cards';
-@import 'components/forms';
-@import 'components/headings';
-
+@import "components/buttons";
+@import url("components/cards");
+@import url("components/forms");
+@import url("components/headings");
 // Import Pages
-@import 'pages/index';
-@import 'pages/home';
-@import 'pages/about';
+@import "pages/index";
+@import url("pages/home");
+@import url("pages/about");

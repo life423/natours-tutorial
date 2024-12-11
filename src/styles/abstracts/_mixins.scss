@@ -4,3 +4,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+// src/styles/abstracts/_mixins.scss
+
+// Flexbox Centering Mixin
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}

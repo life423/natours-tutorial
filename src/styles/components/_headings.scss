@@ -1,24 +1,24 @@
 .heading-main {
-    color: $heading-color;
-    text-transform: uppercase;
+  color: $heading-color;
+  text-transform: uppercase;
     
 
-    &--primary {
-        display: block;
-        font-size: $heading-font-size;
-        font-weight: $heading-font-weight;
-        letter-spacing: $heading-letter-spacing;
-        animation: moveInLeft 1s ease-out;
-        backface-visibility: hidden;
-    }
+  &--primary {
+    display: block;
+    font-size: $heading-font-size;
+    font-weight: $heading-font-weight;
+    letter-spacing: $heading-letter-spacing;
+    animation: moveInLeft 1s ease-out;
+    backface-visibility: hidden;
+  }
 
-    &--secondary {
-        display: block;
-        font-size: $heading-secondary-font-size;
-        font-weight: $heading-secondary-font-weight;
-        letter-spacing: $heading-secondary-letter-spacing;
-        animation: moveInRight 1s ease-out;
-    }
+  &--secondary {
+    display: block;
+    font-size: $heading-secondary-font-size;
+    font-weight: $heading-secondary-font-weight;
+    letter-spacing: $heading-secondary-letter-spacing;
+    animation: moveInRight 1s ease-out;
+  }
 
 
 }
