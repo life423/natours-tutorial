@@ -3,12 +3,10 @@ html {
   font-size: calc(62.5% + 0.25vw); // Slightly adjusts root size based on viewport
 }
 
-
 body {
   font-family: $font-primary;
   font-weight: $font-weight-primary;
   color: $grey;
   padding: 3rem;
   font-size: 1.6rem; // 16px
-   
 }

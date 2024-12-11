@@ -4,7 +4,7 @@
     "rules": {
         "block-no-empty": true,
         "color-no-invalid-hex": true,
-        "indentation": 2,
+        "indentation": [2, { "baseIndentLevel": 1 }],
         "number-leading-zero": "always",
         "string-quotes": "double",
         "max-nesting-depth": 3,

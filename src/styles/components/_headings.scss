@@ -1,7 +1,7 @@
 .heading-main {
   color: $heading-color;
   text-transform: uppercase;
-    
+
 
   &--primary {
     display: block;
@@ -19,6 +19,4 @@
     letter-spacing: $heading-secondary-letter-spacing;
     animation: moveInRight 1s ease-out;
   }
-
-
 }
