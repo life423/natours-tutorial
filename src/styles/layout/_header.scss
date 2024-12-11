@@ -11,8 +11,6 @@
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
-
-
     &__logo-box {
         position: absolute;
         top: 4rem;
@@ -21,7 +19,10 @@
     }
 
     &__logo {
-        height: 3.5rem;
+        width: 100%; /* Makes the logo fill its container */
+        max-width: 10rem; /* Caps the logo size to 10rem */
+        height: auto;
+        display: block;
     }
 
     &__text-box {
